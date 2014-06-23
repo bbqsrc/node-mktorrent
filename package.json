@@ -1,0 +1,27 @@
+{
+  "name": "node-mktorrent",
+  "version": "0.1.0",
+  "description": "Create torrent files in JavaScript.",
+  "main": "mktorrent.js",
+  "dependencies": {
+    "bencode": "^0.6.0",
+    "combined-stream": "^0.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/bbqsrc/node-mktorrent"
+  },
+  "keywords": [
+    "torrent"
+  ],
+  "author": "Brendan Molloy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bbqsrc/node-mktorrent/issues"
+  },
+  "homepage": "https://github.com/bbqsrc/node-mktorrent"
+}
