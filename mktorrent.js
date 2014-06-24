@@ -6,7 +6,7 @@ var path = require('path'),
     CombinedStream = require('combined-stream'),
     Transform = require('stream').Transform,
 
-    VERSION = "0.0.1",
+    VERSION = "0.1.1",
     PIECE_SIZE = 524288; // 512KB
 
 util.inherits(Chunker, Transform);

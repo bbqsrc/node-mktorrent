@@ -1,6 +1,6 @@
 {
   "name": "node-mktorrent",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create torrent files in JavaScript.",
   "main": "mktorrent.js",
   "dependencies": {
