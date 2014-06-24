@@ -83,12 +83,7 @@ function generate(files, announceList, opts, callback) {
         filesStream.append(fs.createReadStream(file));
     });
 
-    chunker.on('start', function() {
-        console.log("begin");
-    });
-
     chunker.on('end', function() {
-        console.log("end");
         dict.info = {
             'piece length': PIECE_SIZE,
             pieces: pieces
@@ -98,8 +93,9 @@ function generate(files, announceList, opts, callback) {
             dict.info.length = fs.readFileSync(files[0]).length,
             dict.info.name = path.basename(files[0])
         } else {
-            if (opts.name)
+            if (opts.name) {
                 dict.info.name = opts.name;
+            }
             dict.info.files = [];
 
             files.forEach(function(file) {
@@ -118,7 +114,6 @@ function generate(files, announceList, opts, callback) {
         hash.update(chunk);
 
         var digest = hash.digest();
-        console.log(digest.length);
         pieces = Buffer.concat([pieces, digest]);
     });
 

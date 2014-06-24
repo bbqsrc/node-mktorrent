@@ -1,6 +1,6 @@
 # node-mktorrent
 
-Create torrents using JavaScript
+Create torrents using JavaScript.
 
 ## Usage
 
